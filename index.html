@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>7 County Home Inspection, LLC</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script src="scrolling.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript">
+     $(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') && ( $(e.target).attr('class') != 'dropdown-toggle' ) ) {
+        $(this).collapse('hide');
+    }
+    });
+  </script>
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="img/seven_county_inspection_logo.png" alt="Seven County Inspection, LLC Logo"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#inspections">INSPECTIONS</a></li>
+          <li><a href="#pricing">PRICING</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="container-fluid" >
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#"><img src="img/seven_county_inspection_logo.png" alt="Seven County Inspection Logo"></a>
+      </div>
+      
+    </div>
+  
+
+  <div id="home" class="container-fluid text-center background">
+    <img src="img/seven_county_inspection_drone_neighborhood.png" alt="seven_county_inspection">
+   
+  </div>
+  <div id="about" class="container-fluid text-center background">
+    <h1>7 County Home Inspections</h1>
+    <br><br>
+    <div class="row">
+      <div class="col-md-6">
+        <p>7 County Home Inspections offers honest, affordable and professional home inspections. Providing an honest report of the property conditions. Your understanding of the property is my number one concern. We offer a 100% guarentee on our work. If you're not happy with our work, you don't pay us.  </p>
+
+      </div>
+      <div class="col-md-6">
+        <img src="img/seven_county_inspection_insulation.png" alt="seven_county_inspection_insulation" class="shadow">
+      </div>
+    </div>
+    
+  </div>
+  <div id="inspection"    class="container-fluid text-center">
+    <h1>Inspections</h1>
+    <br><br>
+    <div class="row">
+      <div class="col-md-6">
+        <img id="manWorking" src="img/seven_county_inspection_working.png" alt="seven_county_inspection_working"class="shadow">
+      </div> 
+    
+    
+      <div class="col-md-6">  
+        <p>At 7 County Home Inspections our inspections include a full over view of your home for further details about our service please contact us directly</p> 
+      </div>
+    </div>
+  </div>
+  <div id="pricing" class="container-fluid text-center">
+    <h1>Pricing</h1>
+    <br><br>
+    <div class="row">
+      <div class="col-md-6">
+          <p>Home inspection pricing depends on the square foot of the house</p>
+      </div>
+      <div class="col-md-6">
+          <img src="img/seven_county_inspection_roof.png" alt="seven_county_home_roof_inspection" class="shadow">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div id="contact" class="container-fluid text-center">
+      <h1>Contact</h1>
+     <div class="row">
+      <div class="col-md-6">
+        <p>Available Monday thru Friday <br> 8 a.m. - 6 p.m.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div id="form" class="container-fluid text-center">
+        <form action="form_fields" method="post" >
+          <div class="formInput">
+            <label for="first_name">First</label>
+            <input type="text" id="first_name" class="field" name="first_name">
+          </div>
+          <div class="formInput">
+            <label for="last_name">Last</label>
+            <input type="text" id="last_name" class="field" name="last_name">
+          </div>
+          <div class="formInput" >
+            <label for="email">Email</label>
+            <input type="email" id="email" class="field" name="email">
+          </div>
+          <div id="row">
+            <div id="property_heading" class="container-fluid text-center">
+                <h3>Property Information</h3>
+            </div>
+          </div>
+          <div class="formInput">
+            <label for="property_address">Property Address</label>
+            <input type="text" id="property_address" class="field" name="property_address">
+          </div>
+          <div class="formInput">
+            <label for="square_footage">Square Footage</label>
+            <input type="text" id="square_footage" class="property_field" name="square_footage">
+          </div>
+          <div class="formInput">
+            <label for="Real_Estate_Agent">Real Estate Agent</label>
+            <input type="text" id="Real_Estate_Agent" class="property_field" name="real_estate_agent">
+          </div>
+          <div class="formInput">
+            <label for="comment">Comments</label>
+            <input type="text" id="comment" class="property_field" value="textarea">
+          </div>
+          <div class="formInput">
+            <button type="button" >Submit</button>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer_info" class="container-fluid text-center">
+    <div class="row">
+      <footer id="footer">
+        <p>Owner/Inspector: Scot Blanton
+        </p>
+        <img src="img/CMI_fake.svg" alt="seven_county_inspection_certified_inspector" id="CMI">
+        <div class="phone_email">
+        <a href="208-880-7816">208-880-7816</a>
+        </div>
+        <br><br>
+        <div class="phone_email">
+        <a href="emailto:7countyhome@gmail.com">Email:7countyhome@gmail.com</a>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
